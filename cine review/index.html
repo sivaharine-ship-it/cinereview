@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINE REVIEW</title>
+    <link rel="stylesheet" href="style.css">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>CINE REVIEW</h1>
+    </div>
+    <div class = "container">
+  <div class="movie-container">
+    <h2>Alien: Romulus (2024)</h2>
+    <h5>Director: Fede Álvarez</h5>
+    <p class="rating">⭐ 7.2/10</p>
+    <p class="genre">Sci-Fi / Horror</p>
+    <p class="description">While scavenging the deep ends of a derelict space station, a group of young space colonizers come face to face with the most terrifying and hostile life form in the universe.</p>
+    <button onclick="deleteMovie(event)">Delete</button>
+</div>
+<div class="movie-container">
+    <h2>Companion (2025)</h2>
+    <h5>Director: Drew Hancock</h5>
+    <p class="rating">⭐ 6.9/10</p>
+    <p class="genre">Sci-Fi / Horror / Thriller</p>
+    <p class="description">A tense, psychological sci-fi horror about a weekend getaway at a remote cabin that devolves into absolute chaos and violence after a shocking revelation regarding one of the guests.</p>
+    <button onclick="deleteMovie(event)">Delete</button>
+</div>
+<div class="movie-container">
+    <h2>M3GAN 2.0 (2025)</h2>
+    <h5>Director: Gerard Johnstone</h5>
+    <p class="rating">⭐ 6.5/10</p>
+    <p class="genre">Sci-Fi / Horror</p>
+    <p class="description">The lifelike AI companion doll returns, but this time she must be rebuilt to combat a hostile, self-aware military humanoid robot that was engineered using her own stolen technology.</p>
+    <button onclick="deleteMovie(event)">Delete</button>
+</div>
+</div>
+<div class="popup-overlay"></div>
+
+
+<div class="popup-box">
+    <h2>Add Movie</h2>
+    <form>
+        <input type="text" placeholder="Movie Title" id="movie-title-input">
+        <input type="text" placeholder="Director Name" id="movie-director-input">
+        <input type="text" placeholder="Rating (e.g. ⭐ 7.5/10)" id="movie-rating-input">
+        <input type="text" placeholder="Genre (e.g. Sci-Fi / Horror)" id="movie-genre-input">
+        <textarea placeholder="Short Description..." id="movie-description-input"></textarea>
+        
+        <div class="popup-buttons">
+            <button type="button" id="add-movie">Add</button>
+            <button type="button" id="cancel-popup">Cancel</button>
+        </div>
+    </form>
+</div>
+
+
+<button class="add-button" id="add-popup-button">+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
